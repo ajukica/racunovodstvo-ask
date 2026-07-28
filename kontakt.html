@@ -7,7 +7,7 @@
 
     <meta
       name="description"
-      content="Kontakt ASK računovodstvo Šibenik - Žirjanska Ul. 23. Knjigovodstvo, porezne usluge i poslovno savjetovanje."
+      content="Kontakt ASK računovodstvo - knjigovodstvo, porezne usluge i poslovno savjetovanje."
     />
 
     <title>ASK | Kontakt</title>
@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <link rel="stylesheet" href="css/kontakt.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
@@ -27,29 +35,50 @@
       <div class="logo">
         <i class="fa-solid fa-calculator"></i>
 
-        ASK
+        <div>
+          <strong>ASK</strong>
+
+          <span>Računovodstveni servis</span>
+        </div>
       </div>
 
-<nav id="menu">
-        <a href="index.html">POČETNA</a>
-        <a href="o-nama.html">O NAMA</a>
-        <a href="usluge.html">USLUGE</a>
-        <a href="kontakt.html">KONTAKT</a>
-      </nav>
+      <nav id="menu">
+        <a href="index.html">Početna</a>
 
+        <a href="o-nama.html">O nama</a>
+
+        <a href="usluge.html">Usluge</a>
+
+        <a href="kontakt.html">Kontakt</a>
+
+        <a class="nav-btn" href="kontakt.html"> Zatražite ponudu </a>
+      </nav>
 
       <div class="hamburger" onclick="toggleMenu()">
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
 
+    <!-- HERO -->
+
     <section class="contact-hero">
       <div>
-        <h1>Kontaktirajte ASK</h1>
+        <div class="badge">
+          <i class="fa-solid fa-envelope"></i>
 
-        <p>Tu smo za sva vaša računovodstvena pitanja.</p>
+          Kontakt
+        </div>
+
+        <h1>Razgovarajmo o vašem poslovanju</h1>
+
+        <p>
+          Naš tim je spreman pomoći vam pronaći najbolje računovodstveno
+          rješenje.
+        </p>
       </div>
     </section>
+
+    <!-- CONTACT INFO -->
 
     <section class="contact-section">
       <h2 class="title">Kontakt informacije</h2>
@@ -85,6 +114,55 @@
       </div>
     </section>
 
+    <!-- FORM -->
+
+    <section class="contact-form-section">
+      <div class="form-wrapper">
+        <div class="form-text">
+          <h2>Pošaljite nam upit</h2>
+
+          <p>
+            Napišite nam što vam je potrebno. Odgovorit ćemo u najkraćem mogućem
+            roku.
+          </p>
+
+          <div class="mini-info">
+            <div>
+              <i class="fa-solid fa-check"></i>
+
+              Besplatne konzultacije
+            </div>
+
+            <div>
+              <i class="fa-solid fa-check"></i>
+
+              Profesionalan pristup
+            </div>
+
+            <div>
+              <i class="fa-solid fa-check"></i>
+
+              Sigurno poslovanje
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Ime i prezime" />
+
+          <input type="email" placeholder="Email" />
+
+          <input type="text" placeholder="Telefon" />
+
+          <textarea placeholder="Vaša poruka"></textarea>
+
+          <button>Pošalji upit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- MAP -->
+
     <section class="map-section">
       <h2 class="title">Pronađite nas</h2>
 
@@ -101,26 +179,10 @@
       </div>
     </section>
 
-    <section class="contact-form-section">
-      <h2 class="title">Pošaljite upit</h2>
+    <section class="cta">
+      <h2>Trebate pouzdanog računovođu?</h2>
 
-      <form class="contact-form">
-        <input type="text" placeholder="Vaše ime" />
-
-        <input type="email" placeholder="Vaš email" />
-
-        <input type="text" placeholder="Telefon" />
-
-        <textarea placeholder="Vaša poruka"></textarea>
-
-        <button>Pošalji upit</button>
-      </form>
-    </section>
-
-    <section class="contact">
-      <h2>Trebate pouzdano računovodstvo?</h2>
-
-      <p>ASK je vaš partner za sigurno i uspješno poslovanje.</p>
+      <p>ASK vam pomaže voditi poslovanje jednostavnije i sigurnije.</p>
 
       <a class="btn" href="mailto:info@ask-racunovodstvo.hr">
         Kontaktirajte nas
@@ -128,11 +190,19 @@
     </section>
 
     <footer>
-      <h3>ASK</h3>
+      <h2>ASK</h2>
 
       <p>Računovodstvo kojem možete vjerovati.</p>
 
-      <p>© 2026 ASK Šibenik</p>
+      <div class="social">
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-linkedin"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+
+      <p class="copy">© 2026 ASK Računovodstveni servis</p>
     </footer>
 
     <script>

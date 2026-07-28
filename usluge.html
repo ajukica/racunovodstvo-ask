@@ -16,6 +16,14 @@
 
     <link rel="stylesheet" href="css/usluge.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -27,38 +35,56 @@
       <div class="logo">
         <i class="fa-solid fa-calculator"></i>
 
-        ASK
+        <div>
+          <strong>ASK</strong>
+
+          <span>Računovodstveni servis</span>
+        </div>
       </div>
 
       <nav id="menu">
-        <a href="index.html">POČETNA</a>
-        <a href="o-nama.html">O NAMA</a>
-        <a href="usluge.html">USLUGE</a>
-        <a href="kontakt.html">KONTAKT</a>
-      </nav>
+        <a href="index.html">Početna</a>
 
+        <a href="o-nama.html">O nama</a>
+
+        <a href="usluge.html">Usluge</a>
+
+        <a href="kontakt.html">Kontakt</a>
+
+        <a class="nav-btn" href="kontakt.html"> Zatražite ponudu </a>
+      </nav>
 
       <div class="hamburger" onclick="toggleMenu()">
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
 
+    <!-- HERO -->
+
     <section class="services-hero">
       <div>
-        <h1>Naše usluge</h1>
+        <div class="badge">
+          <i class="fa-solid fa-briefcase"></i>
+
+          Naše usluge
+        </div>
+
+        <h1>Kompletna financijska podrška za vaše poslovanje</h1>
 
         <p>
-          Kompletna računovodstvena podrška za sigurno i uspješno poslovanje.
+          Od svakodnevnog knjigovodstva do strateškog financijskog savjetovanja.
         </p>
       </div>
     </section>
 
+    <!-- SERVICES -->
+
     <section>
       <h2 class="title">Što nudimo?</h2>
 
-      <div class="services">
+      <div class="cards">
         <div class="card">
-          <i class="fa-solid fa-book icon"></i>
+          <i class="fa-solid fa-book"></i>
 
           <h3>Knjigovodstvo</h3>
 
@@ -68,17 +94,15 @@
         </div>
 
         <div class="card">
-          <i class="fa-solid fa-money-check-dollar icon"></i>
+          <i class="fa-solid fa-money-check-dollar"></i>
 
           <h3>Obračun plaća</h3>
 
-          <p>
-            Precizan obračun plaća, doprinosa i priprema potrebne dokumentacije.
-          </p>
+          <p>Precizan obračun plaća, doprinosa i zakonske dokumentacije.</p>
         </div>
 
         <div class="card">
-          <i class="fa-solid fa-file-invoice-dollar icon"></i>
+          <i class="fa-solid fa-file-invoice-dollar"></i>
 
           <h3>Porezne usluge</h3>
 
@@ -86,30 +110,27 @@
         </div>
 
         <div class="card">
-          <i class="fa-solid fa-chart-line icon"></i>
+          <i class="fa-solid fa-chart-line"></i>
 
           <h3>Financijsko savjetovanje</h3>
 
-          <p>
-            Podrška u donošenju kvalitetnih poslovnih odluka i planiranju
-            razvoja.
-          </p>
+          <p>Analiza poslovanja i podrška kod donošenja važnih odluka.</p>
         </div>
       </div>
     </section>
 
+    <!-- BENEFITS -->
+
     <section class="service-info">
-      <h2 class="title">Zašto odabrati ASK?</h2>
+      <h2 class="title">Zašto ASK?</h2>
 
       <div class="info-grid">
         <div>
           <i class="fa-solid fa-shield-halved"></i>
 
-          <h3>Pouzdanost</h3>
+          <h3>Sigurnost</h3>
 
-          <p>
-            Brinemo o vašim financijama precizno, odgovorno i profesionalno.
-          </p>
+          <p>Vaše financije povjeravate stručnom i odgovornom partneru.</p>
         </div>
 
         <div>
@@ -117,10 +138,7 @@
 
           <h3>Ušteda vremena</h3>
 
-          <p>
-            Preuzimamo administrativne obveze kako biste se vi mogli baviti
-            poslovanjem.
-          </p>
+          <p>Mi preuzimamo administraciju, a vi se fokusirate na razvoj.</p>
         </div>
 
         <div>
@@ -128,49 +146,67 @@
 
           <h3>Podrška</h3>
 
-          <p>Dostupni smo za pitanja i savjete kada vam je potrebno.</p>
+          <p>Uvijek imate dostupnog stručnog partnera za pitanja i savjete.</p>
         </div>
       </div>
     </section>
+
+    <!-- PROCESS -->
 
     <section class="process">
-      <h2 class="title">Način rada</h2>
+      <h2 class="title">Kako suradnja izgleda?</h2>
 
-      <div class="services">
-        <div class="card">
-          <h3>01</h3>
+      <div class="steps">
+        <div>
+          <span>01</span>
 
-          <p>Analiziramo vaše poslovanje i potrebe.</p>
+          <h3>Upoznajemo vaše poslovanje</h3>
+
+          <p>Analiziramo vaše potrebe, ciljeve i način rada.</p>
         </div>
 
-        <div class="card">
-          <h3>02</h3>
+        <div>
+          <span>02</span>
 
-          <p>Pronalazimo najbolje računovodstveno rješenje.</p>
+          <h3>Kreiramo rješenje</h3>
+
+          <p>Odabiremo najbolji model računovodstvene podrške.</p>
         </div>
 
-        <div class="card">
-          <h3>03</h3>
+        <div>
+          <span>03</span>
 
-          <p>Vodimo brigu o vašim financijama.</p>
+          <h3>Vodimo vaše financije</h3>
+
+          <p>Brinemo o rokovima, dokumentima i izvještajima.</p>
         </div>
       </div>
     </section>
 
-    <section class="contact">
-      <h2>Trebate pouzdano računovodstvo?</h2>
+    <!-- CTA -->
 
-      <p>Kontaktirajte ASK i dogovorite suradnju.</p>
+    <section class="cta">
+      <h2>Želite jednostavnije poslovanje?</h2>
+
+      <p>Kontaktirajte ASK i saznajte kako vam možemo pomoći.</p>
 
       <a class="btn" href="kontakt.html"> Zatražite ponudu </a>
     </section>
 
     <footer>
-      <h3>ASK</h3>
+      <h2>ASK</h2>
 
       <p>Računovodstvo kojem možete vjerovati.</p>
 
-      <p>© 2026 ASK</p>
+      <div class="social">
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-linkedin"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+
+      <p class="copy">© 2026 ASK Računovodstveni servis</p>
     </footer>
 
     <script>

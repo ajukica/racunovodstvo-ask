@@ -1,22 +1,16 @@
-/* HERO */
-
 .services-hero {
-  min-height: 400px;
+  min-height: 500px;
 
   display: flex;
 
   align-items: center;
 
-  justify-content: center;
-
-  text-align: center;
+  padding: 80px 8%;
 
   color: white;
 
-  padding: 40px 8%;
-
   background:
-    linear-gradient(rgba(11, 39, 66, 0.85), rgba(11, 39, 66, 0.85)),
+    linear-gradient(rgba(7, 29, 51, 0.88), rgba(7, 29, 51, 0.88)),
     url("../images/slika.jpg");
 
   background-size: cover;
@@ -27,107 +21,55 @@
 .services-hero h1 {
   font-size: 55px;
 
-  margin-bottom: 15px;
+  max-width: 800px;
+
+  line-height: 1.2;
 }
 
 .services-hero p {
-  font-size: 20px;
+  font-size: 22px;
 
-  max-width: 700px;
+  margin-top: 25px;
 }
 
-/* DODATNE INFORMACIJE */
-
 .service-info {
-  background: #f5f7fa;
-
-  text-align: center;
+  background: #f7f9fc;
 }
 
 .info-grid {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
 
-  gap: 30px;
+  gap: 40px;
+
+  text-align: center;
 }
 
 .info-grid div {
   background: white;
 
-  padding: 35px;
+  padding: 40px;
 
-  border-radius: 15px;
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 .info-grid i {
   font-size: 45px;
 
-  color: #d4a017;
+  color: #c9a227;
 
   margin-bottom: 20px;
 }
 
-.info-grid h3 {
-  color: #0b2742;
-
-  margin-bottom: 15px;
-}
-
-
-.hamburger {
-  display: none;
-
-  font-size: 30px;
-
-  cursor: pointer;
-
-  color: white;
-}
-
-@media (max-width: 700px) {
-  header {
-    flex-direction: row;
-
-    justify-content: space-between;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  nav {
-    display: none;
-
-    width: 100%;
-
-    flex-direction: column;
-
-    text-align: center;
-
-    background: #0b2742;
-
-    padding: 20px 0;
-  }
-
-  nav a {
-    padding: 12px;
-  }
-
-  nav.active {
-    display: flex;
-  }
-}
-
-
-/* RESPONSIVE */
-
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .services-hero h1 {
     font-size: 38px;
   }
 
-  .services-hero p {
-    font-size: 16px;
+  .info-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,171 +1,169 @@
-/* HERO */
+.about-hero{
 
-.about-hero {
-  height: 400px;
+min-height:450px;
 
-  display: flex;
+display:flex;
 
-  align-items: center;
+align-items:center;
 
-  justify-content: center;
+padding:80px 8%;
 
-  text-align: center;
+background:
+linear-gradient(
+rgba(7,29,51,.85),
+rgba(7,29,51,.85)
+),
+url("../images/slika.jpg");
 
-  color: white;
+background-size:cover;
 
-  background:
-    linear-gradient(rgba(11, 39, 66, 0.85), rgba(11, 39, 66, 0.85)),
-    url("../images/slika.jpg");
+color:white;
 
-  background-size: cover;
-
-  background-position: center;
-}
-
-.about-hero h1 {
-  font-size: clamp(40px, 6vw, 60px);
-
-  margin-bottom: 15px;
-}
-
-.about-hero p {
-  font-size: 20px;
-}
-
-/* UVOD */
-
-.about-intro {
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-  gap: 50px;
-
-  align-items: center;
-}
-
-.about-text h2 {
-  color: #0b2742;
-
-  font-size: 35px;
-
-  margin-bottom: 20px;
-}
-
-.about-text p {
-  font-size: 18px;
-
-  margin-bottom: 20px;
-}
-
-.about-box {
-  background: #f5f7fa;
-
-  padding: 40px;
-
-  border-radius: 20px;
-
-  text-align: center;
-}
-
-.about-box i {
-  font-size: 55px;
-
-  color: #d4a017;
-
-  margin-bottom: 20px;
-}
-
-/* VRIJEDNOSTI */
-
-.values {
-  background: #f5f7fa;
-}
-
-/* STATISTIKA */
-
-.about-stats {
-  background: #0b2742;
-
-  color: white;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  gap: 100px;
-
-  text-align: center;
-
-  padding: 70px 8%;
-}
-
-.about-stats h2 {
-  font-size: 45px;
-
-  color: #d4a017;
-}
-
-.about-stats p {
-  font-size: 18px;
 }
 
 
-.hamburger {
-  display: none;
 
-  font-size: 30px;
+.about-hero h1{
 
-  cursor: pointer;
+font-size:55px;
 
-  color: white;
-}
+max-width:700px;
 
-@media (max-width: 700px) {
-  header {
-    flex-direction: row;
-
-    justify-content: space-between;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  nav {
-    display: none;
-
-    width: 100%;
-
-    flex-direction: column;
-
-    text-align: center;
-
-    background: #0b2742;
-
-    padding: 20px 0;
-  }
-
-  nav a {
-    padding: 12px;
-  }
-
-  nav.active {
-    display: flex;
-  }
 }
 
 
-@media (max-width: 700px) {
-  .about-stats {
-    flex-direction: column;
 
-    gap: 35px;
-  }
+.about-hero p{
 
-  .about-hero {
-    height: 350px;
-  }
+font-size:22px;
+
+margin-top:20px;
+
+}
+
+
+
+
+.about-intro{
+
+display:grid;
+
+grid-template-columns:1fr 400px;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+
+
+.about-text h2{
+
+font-size:40px;
+
+color:#071d33;
+
+margin-bottom:25px;
+
+}
+
+
+
+.about-text p{
+
+font-size:18px;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+.about-card{
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.1);
+
+text-align:center;
+
+border-top:4px solid #c9a227;
+
+}
+
+
+
+.about-card i{
+
+font-size:50px;
+
+color:#c9a227;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+
+.about-stats{
+
+background:#071d33;
+
+display:flex;
+
+justify-content:space-around;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.about-stats h2{
+
+font-size:50px;
+
+color:#c9a227;
+
+}
+
+
+
+
+
+@media(max-width:800px){
+
+.about-intro{
+
+grid-template-columns:1fr;
+
+}
+
+
+.about-stats{
+
+flex-direction:column;
+
+gap:40px;
+
+}
+
+
+.about-hero h1{
+
+font-size:38px;
+
+}
+
 }
