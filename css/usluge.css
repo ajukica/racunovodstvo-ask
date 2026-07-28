@@ -73,3 +73,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 700px) {
+  .info-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+  }
+
+  .services-hero h1 {
+    font-size: 36px;
+  }
+}

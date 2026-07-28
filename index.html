@@ -1,568 +1,263 @@
 <!doctype html>
 <html lang="hr">
-<head>
+  <head>
+    <meta charset="UTF-8" />
 
-<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="ASK računovodstveni servis - knjigovodstvo, obračun plaća i porezno savjetovanje za poduzetnike."
+    />
 
-<meta name="description" content="ASK računovodstveni servis - knjigovodstvo, obračun plaća i porezno savjetovanje za poduzetnike.">
+    <title>ASK | Računovodstveni servis</title>
 
-<title>ASK | Računovodstveni servis</title>
+    <link rel="stylesheet" href="css/style.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <body>
+    <!-- HEADER -->
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <header>
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-calculator"></i>
 
+        <div>
+          <strong>ASK</strong>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+          <span>Računovodstveni servis</span>
+        </div>
+      </a>
 
+      <nav id="menu">
+        <a href="index.html">Početna</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="usluge.html">Usluge</a>
+        <a href="kontakt.html">Kontakt</a>
 
-</head>
+        <a class="nav-btn" href="kontakt.html"> Zatražite ponudu </a>
+      </nav>
 
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
 
-<body>
+    <!-- HERO -->
 
+    <section class="hero">
+      <div class="hero-text">
+        <div class="badge">
+          <i class="fa-solid fa-check"></i>
 
-<!-- HEADER -->
+          Više od 10 godina iskustva
+        </div>
 
-<header>
+        <h1>Računovodstvo koje vam daje kontrolu nad poslovanjem</h1>
 
+        <p>
+          Vodimo vaše financije, poreze i administraciju kako biste se vi mogli
+          fokusirati na rast svoje tvrtke.
+        </p>
 
-<div class="logo">
+        <div class="hero-buttons">
+          <a class="btn" href="kontakt.html"> Besplatne konzultacije </a>
 
-<i class="fa-solid fa-calculator"></i>
+          <a class="outline-btn" href="usluge.html"> Naše usluge </a>
+        </div>
+      </div>
 
-<div>
-<strong>ASK</strong>
-<span>Računovodstveni servis</span>
-</div>
+      <div class="hero-image">
+        <img src="images/slika.jpg" alt="Računovodstveni servis" />
+      </div>
+    </section>
 
-</div>
+    <!-- TRUST -->
 
+    <section class="trust">
+      <div>
+        <i class="fa-solid fa-building"></i>
 
+        <h3>250+</h3>
 
-<nav id="menu">
+        <p>zadovoljnih klijenata</p>
+      </div>
 
-<a href="index.html">Početna</a>
-<a href="o-nama.html">O nama</a>
-<a href="usluge.html">Usluge</a>
-<a href="kontakt.html">Kontakt</a>
+      <div>
+        <i class="fa-solid fa-calendar-check"></i>
 
-<a class="nav-btn" href="kontakt.html">
-Zatražite ponudu
-</a>
+        <h3>10+</h3>
 
-</nav>
+        <p>godina iskustva</p>
+      </div>
 
+      <div>
+        <i class="fa-solid fa-lock"></i>
 
+        <h3>100%</h3>
 
-<div class="hamburger" onclick="toggleMenu()">
+        <p>sigurnost podataka</p>
+      </div>
 
-<i class="fa-solid fa-bars"></i>
+      <div>
+        <i class="fa-solid fa-headset"></i>
 
-</div>
+        <h3>24/7</h3>
 
+        <p>podrška klijentima</p>
+      </div>
+    </section>
 
-</header>
+    <!-- WHY -->
 
+    <section>
+      <h2 class="title">Zašto odabrati ASK?</h2>
 
+      <div class="cards">
+        <div class="card">
+          <i class="fa-solid fa-shield-halved"></i>
 
+          <h3>Pouzdanost</h3>
 
-<!-- HERO -->
+          <p>
+            Točni izvještaji, sigurnost podataka i pravovremeno izvršavanje svih
+            obveza.
+          </p>
+        </div>
 
+        <div class="card">
+          <i class="fa-solid fa-laptop"></i>
 
-<section class="hero">
+          <h3>Digitalno poslovanje</h3>
 
+          <p>Manje papirologije, više kontrole i jednostavniji procesi.</p>
+        </div>
 
-<div class="hero-text">
+        <div class="card">
+          <i class="fa-solid fa-chart-line"></i>
 
+          <h3>Rast poslovanja</h3>
 
-<div class="badge">
+          <p>
+            Financijski savjeti koji pomažu vašoj tvrtki donositi bolje odluke.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<i class="fa-solid fa-check"></i>
+    <!-- SERVICES -->
 
-Više od 10 godina iskustva
+    <section class="services-section">
+      <h2 class="title">Naše usluge</h2>
 
-</div>
+      <div class="cards">
+        <div class="card">
+          <i class="fa-solid fa-book"></i>
 
+          <h3>Knjigovodstvo</h3>
 
+          <p>
+            Kompletno vođenje poslovnih knjiga za obrte i trgovačka društva.
+          </p>
+        </div>
 
-<h1>
+        <div class="card">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
 
-Računovodstvo koje vam daje kontrolu nad poslovanjem
+          <h3>Obračun plaća</h3>
 
-</h1>
+          <p>Precizan obračun plaća, doprinosa i svih zakonskih obveza.</p>
+        </div>
 
+        <div class="card">
+          <i class="fa-solid fa-scale-balanced"></i>
 
+          <h3>Porezno savjetovanje</h3>
 
-<p>
+          <p>Pomoć pri poreznim pitanjima i optimizaciji troškova.</p>
+        </div>
+      </div>
+    </section>
 
-Vodimo vaše financije, poreze i administraciju
-kako biste se vi mogli fokusirati na rast svoje tvrtke.
+    <!-- PROCESS -->
 
-</p>
+    <section class="process">
+      <h2 class="title">Kako radimo?</h2>
 
+      <div class="steps">
+        <div>
+          <span>01</span>
 
+          <h3>Upoznajemo vas</h3>
 
-<div class="hero-buttons">
+          <p>Analiziramo vaše poslovanje i vaše potrebe.</p>
+        </div>
 
+        <div>
+          <span>02</span>
 
-<a class="btn" href="kontakt.html">
+          <h3>Pronalazimo rješenje</h3>
 
-Besplatne konzultacije
+          <p>Kreiramo računovodstveni model koji odgovara vašem poslu.</p>
+        </div>
 
-</a>
+        <div>
+          <span>03</span>
 
+          <h3>Vodimo financije</h3>
 
-<a class="outline-btn" href="usluge.html">
+          <p>Vi se bavite poslovanjem, mi administracijom.</p>
+        </div>
+      </div>
+    </section>
 
-Naše usluge
+    <!-- CTA -->
 
-</a>
+    <section class="cta">
+      <h2>Spremni za jednostavnije poslovanje?</h2>
 
+      <p>
+        Dogovorite besplatne konzultacije i saznajte kako vam možemo pomoći.
+      </p>
 
-</div>
+      <a class="btn" href="kontakt.html"> Kontaktirajte nas </a>
+    </section>
 
+    <!-- FOOTER -->
 
+    <footer>
+      <h2>ASK</h2>
 
-</div>
+      <p>Računovodstvo kojem možete vjerovati.</p>
 
+      <div class="social">
+        <i class="fa-brands fa-facebook"></i>
 
+        <i class="fa-brands fa-linkedin"></i>
 
-<div class="hero-image">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
 
+      <p class="copy">© 2026 ASK Računovodstveni servis</p>
+    </footer>
 
-<img src="images/slika.jpg" alt="Računovodstveni servis">
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-<!-- TRUST -->
-
-
-<section class="trust">
-
-
-<div>
-
-<i class="fa-solid fa-building"></i>
-
-<h3>250+</h3>
-
-<p>zadovoljnih klijenata</p>
-
-</div>
-
-
-
-<div>
-
-<i class="fa-solid fa-calendar-check"></i>
-
-<h3>10+</h3>
-
-<p>godina iskustva</p>
-
-</div>
-
-
-
-<div>
-
-<i class="fa-solid fa-lock"></i>
-
-<h3>100%</h3>
-
-<p>sigurnost podataka</p>
-
-</div>
-
-
-
-<div>
-
-<i class="fa-solid fa-headset"></i>
-
-<h3>24/7</h3>
-
-<p>podrška klijentima</p>
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- WHY -->
-
-
-<section>
-
-
-<h2 class="title">
-
-Zašto odabrati ASK?
-
-</h2>
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-shield-halved"></i>
-
-
-<h3>Pouzdanost</h3>
-
-
-<p>
-
-Točni izvještaji, sigurnost podataka
-i pravovremeno izvršavanje svih obveza.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-laptop"></i>
-
-
-<h3>Digitalno poslovanje</h3>
-
-
-<p>
-
-Manje papirologije,
-više kontrole i jednostavniji procesi.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-chart-line"></i>
-
-
-<h3>Rast poslovanja</h3>
-
-
-<p>
-
-Financijski savjeti koji pomažu
-vašoj tvrtki donositi bolje odluke.
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- SERVICES -->
-
-
-<section class="services-section">
-
-
-<h2 class="title">
-
-Naše usluge
-
-</h2>
-
-
-
-<div class="cards">
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-book"></i>
-
-
-<h3>Knjigovodstvo</h3>
-
-
-<p>
-
-Kompletno vođenje poslovnih knjiga
-za obrte i trgovačka društva.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-file-invoice-dollar"></i>
-
-
-<h3>Obračun plaća</h3>
-
-
-<p>
-
-Precizan obračun plaća,
-doprinosa i svih zakonskih obveza.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-scale-balanced"></i>
-
-
-<h3>Porezno savjetovanje</h3>
-
-
-<p>
-
-Pomoć pri poreznim pitanjima
-i optimizaciji troškova.
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- PROCESS -->
-
-
-<section class="process">
-
-
-<h2 class="title">
-
-Kako radimo?
-
-</h2>
-
-
-
-<div class="steps">
-
-
-
-<div>
-
-<span>01</span>
-
-<h3>Upoznajemo vas</h3>
-
-<p>
-
-Analiziramo vaše poslovanje
-i vaše potrebe.
-
-</p>
-
-</div>
-
-
-
-<div>
-
-<span>02</span>
-
-<h3>Pronalazimo rješenje</h3>
-
-<p>
-
-Kreiramo računovodstveni model
-koji odgovara vašem poslu.
-
-</p>
-
-</div>
-
-
-
-<div>
-
-<span>03</span>
-
-<h3>Vodimo financije</h3>
-
-<p>
-
-Vi se bavite poslovanjem,
-mi administracijom.
-
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- CTA -->
-
-
-<section class="cta">
-
-
-<h2>
-
-Spremni za jednostavnije poslovanje?
-
-</h2>
-
-
-<p>
-
-Dogovorite besplatne konzultacije
-i saznajte kako vam možemo pomoći.
-
-</p>
-
-
-
-<a class="btn" href="kontakt.html">
-
-Kontaktirajte nas
-
-</a>
-
-
-</section>
-
-
-
-
-
-
-<!-- FOOTER -->
-
-
-<footer>
-
-
-<h2>ASK</h2>
-
-
-<p>
-
-Računovodstvo kojem možete vjerovati.
-
-</p>
-
-
-<div class="social">
-
-<i class="fa-brands fa-facebook"></i>
-
-<i class="fa-brands fa-linkedin"></i>
-
-<i class="fa-brands fa-instagram"></i>
-
-</div>
-
-
-
-<p class="copy">
-
-© 2026 ASK Računovodstveni servis
-
-</p>
-
-
-</footer>
-
-
-
-
-<script>
-
-function toggleMenu(){
-
-document
-.getElementById("menu")
-.classList.toggle("active");
-
-}
-
-</script>
-
-
-</body>
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>

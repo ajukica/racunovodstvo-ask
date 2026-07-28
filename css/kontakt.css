@@ -160,3 +160,21 @@
     font-size: 38px;
   }
 }
+
+@media (max-width: 700px) {
+  .contact-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+  }
+
+  .form-wrapper {
+    display: grid;
+
+    grid-template-columns: 1fr;
+  }
+
+  .map-container iframe {
+    height: 300px;
+  }
+}
