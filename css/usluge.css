@@ -74,6 +74,52 @@
   margin-bottom: 15px;
 }
 
+
+.hamburger {
+  display: none;
+
+  font-size: 30px;
+
+  cursor: pointer;
+
+  color: white;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    background: #0b2742;
+
+    padding: 20px 0;
+  }
+
+  nav a {
+    padding: 12px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
+
 /* RESPONSIVE */
 
 @media (max-width: 700px) {
