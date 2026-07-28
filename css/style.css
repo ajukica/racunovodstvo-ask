@@ -21,6 +21,7 @@ header {
   background: #0b2742;
   color: white;
   padding: 20px 8%;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -250,51 +251,7 @@ footer {
   }
 }
 
-/* MOBILE */
 
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-
-    text-align: center;
-  }
-
-  nav {
-    flex-direction: column;
-
-    gap: 15px;
-
-    margin-top: 20px;
-  }
-
-  .hero {
-    min-height: 500px;
-
-    text-align: center;
-
-    justify-content: center;
-  }
-
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .services {
-    grid-template-columns: 1fr;
-  }
-
-  .card {
-    padding: 25px 20px;
-  }
-
-  form {
-    width: 100%;
-  }
-}
 /* MODERN DODACI */
 
 .logo i {
@@ -407,45 +364,71 @@ footer {
 /* HAMBURGER MENU */
 
 .hamburger {
-  display: none;
 
-  font-size: 30px;
+    display:none;
 
-  cursor: pointer;
+    font-size:30px;
 
-  color: white;
+    cursor:pointer;
+
+    color:white;
+
+    margin-left:auto;
+
 }
 
-@media (max-width: 700px) {
-  header {
-    flex-direction: row;
+@media(max-width:700px){
 
-    justify-content: space-between;
-  }
 
-  .hamburger {
-    display: block;
-  }
+header{
 
-  nav {
-    display: none;
+    flex-direction:row;
 
-    width: 100%;
+    justify-content:space-between;
 
-    flex-direction: column;
+    align-items:center;
 
-    text-align: center;
+    padding:20px 5%;
 
-    background: #0b2742;
+}
 
-    padding: 20px 0;
-  }
 
-  nav a {
-    padding: 12px;
-  }
+nav{
 
-  nav.active {
-    display: flex;
-  }
+    display:none;
+
+    position:absolute;
+
+    top:75px;
+
+    left:0;
+
+    width:100%;
+
+    background:#0b2742;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:20px 0;
+
+}
+
+
+nav.active{
+
+    display:flex;
+
+}
+
+
+
+.hamburger{
+
+    display:block;
+
+}
+
+
 }
