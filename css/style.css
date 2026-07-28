@@ -1,0 +1,633 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family:"Segoe UI", Arial, sans-serif;
+    color:#333;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+
+/* HEADER */
+
+header {
+    background:#0b2742;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+
+.logo {
+    font-size:26px;
+    font-weight:700;
+}
+
+
+nav {
+    display:flex;
+    gap:25px;
+}
+
+
+nav a {
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+
+nav a:hover {
+    color:#d4a017;
+}
+
+
+
+/* HERO */
+
+.hero {
+
+    min-height:550px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:60px 8%;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(11,39,66,.85),
+        rgba(11,39,66,.85)
+    ),
+    url("../images/slika.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+.hero div {
+    max-width:750px;
+}
+
+
+.hero h1 {
+
+    font-size:clamp(32px,5vw,48px);
+
+    line-height:1.2;
+
+}
+
+
+.hero p {
+
+    font-size:clamp(16px,2vw,20px);
+
+    margin-top:20px;
+
+}
+
+
+
+/* BUTTON */
+
+.btn {
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:14px 35px;
+
+    background:#d4a017;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+
+.btn:hover {
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* SECTIONS */
+
+section {
+
+    padding:80px 8%;
+
+}
+
+
+.title {
+
+    text-align:center;
+
+    color:#0b2742;
+
+    font-size:clamp(28px,4vw,35px);
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* CONTENT */
+
+.content {
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    font-size:18px;
+
+}
+
+
+
+/* SERVICES */
+
+
+.services {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+
+.card {
+
+    background:#f5f7fa;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+.card:hover {
+
+    transform:translateY(-5px);
+
+}
+
+
+.card h3 {
+
+    color:#0b2742;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* CONTACT */
+
+.contact {
+
+    background:#0b2742;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+form {
+
+    max-width:500px;
+
+    margin:30px auto;
+
+}
+
+
+input,
+textarea {
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border-radius:8px;
+
+    border:none;
+
+    font-size:16px;
+
+}
+
+
+textarea {
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+
+button {
+
+    padding:14px 35px;
+
+    background:#d4a017;
+
+    border:none;
+
+    color:white;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+
+    background:#061827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    header{
+
+        padding:20px 5%;
+
+    }
+
+
+    section{
+
+        padding:60px 5%;
+
+    }
+
+
+    .hero{
+
+        padding:50px 5%;
+
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+
+    header{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+    nav{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        margin-top:20px;
+
+    }
+
+
+    .hero{
+
+        min-height:500px;
+
+        text-align:center;
+
+        justify-content:center;
+
+    }
+
+
+    .hero h1{
+
+        font-size:32px;
+
+    }
+
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+
+    .services{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .card{
+
+        padding:25px 20px;
+
+    }
+
+
+    form{
+
+        width:100%;
+
+    }
+
+ }
+/* MODERN DODACI */
+
+
+.logo i {
+
+color:#d4a017;
+
+margin-right:8px;
+
+}
+
+
+
+.hamburger {
+
+display:none;
+
+font-size:28px;
+
+cursor:pointer;
+
+}
+
+
+
+.icon {
+
+font-size:40px;
+
+color:#d4a017;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+.card {
+
+transition:.4s;
+
+}
+
+
+
+.card:hover {
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+
+/* FIX STATS */
+
+.stats {
+
+    width:100%;
+    background:#0b2742;
+    padding:70px 0;
+}
+
+
+.stats-container {
+
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+
+    display:flex;
+    flex-direction:row;
+
+    justify-content:space-around;
+    align-items:center;
+
+    text-align:center;
+}
+
+
+.stats-container div {
+
+    flex:1;
+
+}
+
+
+.stats-container h2 {
+
+    font-size:45px;
+    color:#d4a017;
+    margin:0;
+
+}
+
+
+.stats-container p {
+
+    color:white;
+    font-size:18px;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+    .stats-container {
+
+        flex-direction:column;
+
+    }
+
+}
+
+.process {
+
+background:#f5f7fa;
+
+}
+
+
+
+
+
+.contact h2 {
+
+font-size:35px;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+/* ANIMACIJE */
+
+
+.hero-content {
+
+animation:show .9s ease;
+
+}
+
+
+
+@keyframes show {
+
+from {
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+to {
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+
+
+/* MOBILE MENU */
+
+
+@media(max-width:700px){
+
+
+.hamburger {
+
+display:block;
+
+}
+
+
+
+nav {
+
+display:none;
+
+width:100%;
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav.active {
+
+display:flex;
+
+}
+
+
+
+.stats {
+
+flex-direction:column;
+
+gap:30px;
+
+}
+
+
+}
+

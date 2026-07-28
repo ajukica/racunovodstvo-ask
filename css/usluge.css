@@ -1,0 +1,156 @@
+
+
+
+/* HERO */
+
+.services-hero {
+
+min-height:400px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+color:white;
+
+padding:40px 8%;
+
+
+background:
+
+linear-gradient(
+rgba(11,39,66,.85),
+rgba(11,39,66,.85)
+),
+
+url("../images/slika.jpg");
+
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+
+
+.services-hero h1 {
+
+font-size:55px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.services-hero p {
+
+font-size:20px;
+
+max-width:700px;
+
+}
+
+
+
+
+
+
+/* DODATNE INFORMACIJE */
+
+
+.service-info {
+
+background:#f5f7fa;
+
+text-align:center;
+
+}
+
+
+
+.info-grid {
+
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+
+gap:30px;
+
+
+}
+
+
+
+.info-grid div {
+
+
+background:white;
+
+padding:35px;
+
+border-radius:15px;
+
+}
+
+
+
+.info-grid i {
+
+
+font-size:45px;
+
+color:#d4a017;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+.info-grid h3 {
+
+
+color:#0b2742;
+
+margin-bottom:15px;
+
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:700px){
+
+
+.services-hero h1 {
+
+font-size:38px;
+
+}
+
+
+.services-hero p {
+
+font-size:16px;
+
+}
+
+
+}
+
