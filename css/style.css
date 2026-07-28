@@ -41,13 +41,31 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  transition: 0.3s;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background:  #d4a017;;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 nav a:hover {
-  color: #d4a017;
+  color:  #d4a017;
 }
-
 /* HERO */
 
 .hero {
