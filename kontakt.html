@@ -1,367 +1,143 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
+    <meta
+      name="description"
+      content="Kontakt ASK računovodstvo Šibenik - Žirjanska Ul. 23. Knjigovodstvo, porezne usluge i poslovno savjetovanje."
+    />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASK | Kontakt</title>
 
+    <link rel="stylesheet" href="css/style.css" />
 
-<meta name="description" content="Kontakt ASK računovodstvo Šibenik - Žirjanska Ul. 23. Knjigovodstvo, porezne usluge i poslovno savjetovanje.">
+    <link rel="stylesheet" href="css/kontakt.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-<title>ASK | Kontakt</title>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-calculator"></i>
 
+        ASK
+      </div>
 
-<link rel="stylesheet" href="css/style.css">
+      <nav id="menu">
+        <a href="index.html">Početna</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="usluge.html">Usluge</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
 
-<link rel="stylesheet" href="css/kontakt.css">
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
 
+    <section class="contact-hero">
+      <div>
+        <h1>Kontaktirajte ASK</h1>
 
-<link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <p>Tu smo za sva vaša računovodstvena pitanja.</p>
+      </div>
+    </section>
 
+    <section class="contact-section">
+      <h2 class="title">Kontakt informacije</h2>
 
-</head>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <i class="fa-solid fa-location-dot"></i>
 
+          <h3>Adresa</h3>
 
+          <p>
+            Žirjanska Ul. 23<br />
 
-<body>
+            22000 Šibenik
+          </p>
+        </div>
 
+        <div class="contact-card">
+          <i class="fa-solid fa-phone"></i>
 
+          <h3>Telefon</h3>
 
-<header>
+          <p>+385 XX XXX XXXX</p>
+        </div>
 
+        <div class="contact-card">
+          <i class="fa-solid fa-envelope"></i>
 
-<div class="logo">
+          <h3>Email</h3>
 
-<i class="fa-solid fa-calculator"></i>
+          <p>info@ask-racunovodstvo.hr</p>
+        </div>
+      </div>
+    </section>
 
-ASK
+    <section class="map-section">
+      <h2 class="title">Pronađite nas</h2>
 
-</div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=Žirjanska+Ul.+23,+22000+Šibenik&output=embed"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
 
+    <section class="contact-form-section">
+      <h2 class="title">Pošaljite upit</h2>
 
+      <form class="contact-form">
+        <input type="text" placeholder="Vaše ime" />
 
-<nav>
+        <input type="email" placeholder="Vaš email" />
 
-<a href="index.html">Početna</a>
+        <input type="text" placeholder="Telefon" />
 
-<a href="o-nama.html">O nama</a>
+        <textarea placeholder="Vaša poruka"></textarea>
 
-<a href="usluge.html">Usluge</a>
+        <button>Pošalji upit</button>
+      </form>
+    </section>
 
-<a href="kontakt.html">Kontakt</a>
+    <section class="contact">
+      <h2>Trebate pouzdano računovodstvo?</h2>
 
-</nav>
+      <p>ASK je vaš partner za sigurno i uspješno poslovanje.</p>
 
+      <a class="btn" href="mailto:info@ask-racunovodstvo.hr">
+        Kontaktirajte nas
+      </a>
+    </section>
 
-</header>
+    <footer>
+      <h3>ASK</h3>
 
+      <p>Računovodstvo kojem možete vjerovati.</p>
 
+      <p>© 2026 ASK Šibenik</p>
+    </footer>
 
-
-
-
-<section class="contact-hero">
-
-
-<div>
-
-
-<h1>
-
-Kontaktirajte ASK
-
-</h1>
-
-
-<p>
-
-Tu smo za sva vaša računovodstvena pitanja.
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section class="contact-section">
-
-
-<h2 class="title">
-
-Kontakt informacije
-
-</h2>
-
-
-
-
-<div class="contact-grid">
-
-
-
-<div class="contact-card">
-
-
-<i class="fa-solid fa-location-dot"></i>
-
-
-<h3>
-
-Adresa
-
-</h3>
-
-
-<p>
-
-Žirjanska Ul. 23<br>
-
-22000 Šibenik
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="contact-card">
-
-
-<i class="fa-solid fa-phone"></i>
-
-
-<h3>
-
-Telefon
-
-</h3>
-
-
-<p>
-
-+385 XX XXX XXXX
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="contact-card">
-
-
-<i class="fa-solid fa-envelope"></i>
-
-
-<h3>
-
-Email
-
-</h3>
-
-
-<p>
-
-info@ask-racunovodstvo.hr
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section class="map-section">
-
-
-<h2 class="title">
-
-Pronađite nas
-
-</h2>
-
-
-
-<div class="map-container">
-
-
-<iframe
-
-src="https://www.google.com/maps?q=Žirjanska+Ul.+23,+22000+Šibenik&output=embed"
-
-width="100%"
-
-height="450"
-
-style="border:0;"
-
-allowfullscreen=""
-
-loading="lazy">
-
-</iframe>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section class="contact-form-section">
-
-
-<h2 class="title">
-
-Pošaljite upit
-
-</h2>
-
-
-
-<form class="contact-form">
-
-
-<input type="text" placeholder="Vaše ime">
-
-
-<input type="email" placeholder="Vaš email">
-
-
-
-<input type="text" placeholder="Telefon">
-
-
-
-<textarea placeholder="Vaša poruka"></textarea>
-
-
-
-<button>
-
-Pošalji upit
-
-</button>
-
-
-</form>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section class="contact">
-
-
-<h2>
-
-Trebate pouzdano računovodstvo?
-
-</h2>
-
-
-<p>
-
-ASK je vaš partner za sigurno i uspješno poslovanje.
-
-</p>
-
-
-
-<a class="btn" href="mailto:info@ask-racunovodstvo.hr">
-
-Kontaktirajte nas
-
-</a>
-
-
-</section>
-
-
-
-
-
-
-
-<footer>
-
-
-<h3>
-
-ASK
-
-</h3>
-
-
-<p>
-
-Računovodstvo kojem možete vjerovati.
-
-</p>
-
-
-<p>
-
-© 2026 ASK Šibenik
-
-</p>
-
-
-</footer>
-
-
-
-
-
-
-</body>
-
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>

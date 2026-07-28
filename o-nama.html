@@ -1,392 +1,156 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
+    <meta
+      name="description"
+      content="FinExpert računovodstveni servis - upoznajte naš tim, iskustvo i način rada."
+    />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nama</title>
 
-<meta name="description" content="FinExpert računovodstveni servis - upoznajte naš tim, iskustvo i način rada.">
+    <link rel="stylesheet" href="css/style.css" />
 
+    <link rel="stylesheet" href="css/o-nama.css" />
 
-<title> O nama</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-calculator"></i>
 
-<link rel="stylesheet" href="css/style.css">
+        Ask
+      </div>
 
-<link rel="stylesheet" href="css/o-nama.css">
+      <nav id="menu">
+        <a href="index.html">Početna</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="usluge.html">Usluge</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
 
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
 
-<link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <section class="about-hero">
+      <div>
+        <h1>O nama</h1>
 
+        <p>Stručnost, povjerenje i preciznost temelj su našeg rada.</p>
+      </div>
+    </section>
 
-</head>
+    <section class="about-intro">
+      <div class="about-text">
+        <h2>Računovodstvo koje razumije vaše poslovanje</h2>
 
+        <p>
+          FinExpert je moderan računovodstveni servis posvećen pružanju
+          kvalitetne financijske podrške poduzetnicima, obrtima i tvrtkama.
+        </p>
 
-<body>
+        <p>
+          Naš cilj nije samo voditi vaše knjige, nego biti vaš partner u
+          donošenju poslovnih odluka.
+        </p>
+      </div>
 
+      <div class="about-box">
+        <i class="fa-solid fa-building-columns"></i>
 
+        <h3>Profesionalan pristup</h3>
 
-<header>
+        <p>
+          Svaki klijent dobiva individualan pristup i rješenja prilagođena
+          njegovom poslovanju.
+        </p>
+      </div>
+    </section>
 
+    <section class="values">
+      <h2 class="title">Naše vrijednosti</h2>
 
-<div class="logo">
+      <div class="services">
+        <div class="card">
+          <i class="fa-solid fa-handshake icon"></i>
 
-<i class="fa-solid fa-calculator"></i>
+          <h3>Povjerenje</h3>
 
-Ask
-</div>
+          <p>
+            Gradimo dugoročne odnose temeljene na sigurnosti i transparentnosti.
+          </p>
+        </div>
 
+        <div class="card">
+          <i class="fa-solid fa-bullseye icon"></i>
 
+          <h3>Točnost</h3>
 
-<nav>
+          <p>Poštujemo rokove i osiguravamo precizne financijske podatke.</p>
+        </div>
 
-<a href="index.html">Početna</a>
+        <div class="card">
+          <i class="fa-solid fa-lightbulb icon"></i>
 
-<a href="onama.html">O nama</a>
+          <h3>Inovacije</h3>
 
-<a href="usluge.html">Usluge</a>
+          <p>
+            Koristimo moderna digitalna rješenja za jednostavnije poslovanje.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<a href="kontakt.html">Kontakt</a>
+    <section class="about-stats">
+      <div>
+        <h2>10+</h2>
 
-</nav>
+        <p>Godina iskustva</p>
+      </div>
 
+      <div>
+        <h2>250+</h2>
 
-</header>
+        <p>Zadovoljnih klijenata</p>
+      </div>
 
+      <div>
+        <h2>100%</h2>
 
+        <p>Predanost kvaliteti</p>
+      </div>
+    </section>
 
+    <section class="contact">
+      <h2>Želite sigurnije poslovanje?</h2>
 
+      <p>Kontaktirajte nas i saznajte kako vam možemo pomoći.</p>
 
-<section class="about-hero">
+      <a class="btn" href="kontakt.html"> Kontakt </a>
+    </section>
 
+    <footer>
+      <h3></h3>
 
-<div>
+      <p>Računovodstvo kojem možete vjerovati.</p>
 
-<h1>
+      <p>© 2026</p>
+    </footer>
 
-O nama
-
-</h1>
-
-
-<p>
-
-Stručnost, povjerenje i preciznost temelj su našeg rada.
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="about-intro">
-
-
-<div class="about-text">
-
-
-<h2>
-
-Računovodstvo koje razumije vaše poslovanje
-
-</h2>
-
-
-<p>
-
-FinExpert je moderan računovodstveni servis posvećen
-pružanju kvalitetne financijske podrške poduzetnicima,
-obrtima i tvrtkama.
-
-</p>
-
-
-<p>
-
-Naš cilj nije samo voditi vaše knjige, nego biti vaš
-partner u donošenju poslovnih odluka.
-
-</p>
-
-
-</div>
-
-
-
-<div class="about-box">
-
-
-<i class="fa-solid fa-building-columns"></i>
-
-
-<h3>
-
-Profesionalan pristup
-
-</h3>
-
-
-<p>
-
-Svaki klijent dobiva individualan pristup i rješenja
-prilagođena njegovom poslovanju.
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section class="values">
-
-
-<h2 class="title">
-
-Naše vrijednosti
-
-</h2>
-
-
-
-<div class="services">
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-handshake icon"></i>
-
-
-<h3>
-
-Povjerenje
-
-</h3>
-
-
-<p>
-
-Gradimo dugoročne odnose temeljene na sigurnosti
-i transparentnosti.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-bullseye icon"></i>
-
-
-<h3>
-
-Točnost
-
-</h3>
-
-
-<p>
-
-Poštujemo rokove i osiguravamo precizne financijske podatke.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-lightbulb icon"></i>
-
-
-<h3>
-
-Inovacije
-
-</h3>
-
-
-<p>
-
-Koristimo moderna digitalna rješenja za jednostavnije poslovanje.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="about-stats">
-
-
-<div>
-
-
-<h2>
-
-10+
-
-</h2>
-
-<p>
-
-Godina iskustva
-
-</p>
-
-</div>
-
-
-
-<div>
-
-
-<h2>
-
-250+
-
-</h2>
-
-<p>
-
-Zadovoljnih klijenata
-
-</p>
-
-</div>
-
-
-
-<div>
-
-
-<h2>
-
-100%
-
-</h2>
-
-<p>
-
-Predanost kvaliteti
-
-</p>
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="contact">
-
-
-<h2>
-
-Želite sigurnije poslovanje?
-
-</h2>
-
-
-<p>
-
-Kontaktirajte nas i saznajte kako vam možemo pomoći.
-
-</p>
-
-
-<a class="btn" href="kontakt.html">
-
-Kontakt
-
-</a>
-
-
-</section>
-
-
-
-
-
-
-<footer>
-
-
-<h3>
-
-FinExpert
-
-</h3>
-
-
-<p>
-
-Računovodstvo kojem možete vjerovati.
-
-</p>
-
-
-<p>
-
-© 2026
-
-</p>
-
-
-</footer>
-
-
-
-</body>
-
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>

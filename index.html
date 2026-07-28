@@ -1,478 +1,190 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
+    <meta
+      name="description"
+      content="FinExpert računovodstveni servis - knjigovodstvo, obračun plaća i porezno savjetovanje za poduzetnike."
+    />
+
+    <title>FinExpert | Računovodstveni servis</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome ikone -->
 
-<meta name="description" content="FinExpert računovodstveni servis - knjigovodstvo, obračun plaća i porezno savjetovanje za poduzetnike.">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-calculator"></i>
 
-<title>FinExpert | Računovodstveni servis</title>
+        Ask
+      </div>
 
+      <nav id="menu">
+        <a href="index.html">Početna</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="usluge.html">Usluge</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
 
-<link rel="stylesheet" href="css/style.css">
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
 
-<!-- Font Awesome ikone -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Vaš financijski partner za sigurno poslovanje</h1>
 
-<link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <p>
+          Moderni računovodstveni servis koji štedi vaše vrijeme i pomaže vam
+          donositi bolje poslovne odluke.
+        </p>
 
+        <a class="btn" href="kontakt.html"> Zatražite ponudu </a>
+      </div>
+    </section>
 
-</head>
+    <section>
+      <h2 class="title">Zašto baš mi?</h2>
 
+      <div class="services">
+        <div class="card">
+          <i class="fa-solid fa-shield-halved icon"></i>
 
-<body>
+          <h3>Pouzdanost</h3>
 
+          <p>
+            Točni izvještaji, sigurnost podataka i pravovremeno izvršavanje
+            obveza.
+          </p>
+        </div>
 
+        <div class="card">
+          <i class="fa-solid fa-clock icon"></i>
 
-<header>
+          <h3>Ušteda vremena</h3>
 
+          <p>Vi vodite posao, a mi vodimo administraciju i financije.</p>
+        </div>
 
-<div class="logo">
+        <div class="card">
+          <i class="fa-solid fa-chart-line icon"></i>
 
-<i class="fa-solid fa-calculator"></i>
+          <h3>Rast poslovanja</h3>
 
-Ask
+          <p>Financijski savjeti koji pomažu vašem poslovanju.</p>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section class="stats">
+      <div class="stats-container">
+        <div>
+          <h2>10+</h2>
+          <p>godina iskustva</p>
+        </div>
 
+        <div>
+          <h2>250+</h2>
+          <p>zadovoljnih klijenata</p>
+        </div>
 
+        <div>
+          <h2>99%</h2>
+          <p>točnost izvještaja</p>
+        </div>
+      </div>
+    </section>
 
-<nav id="menu">
+    <section>
+      <h2 class="title">Naše usluge</h2>
 
-<a href="index.html">Početna</a>
-<a href="o-nama.html">O nama</a>
-<a href="usluge.html">Usluge</a>
-<a href="kontakt.html">Kontakt</a>
+      <div class="services">
+        <div class="card">
+          <i class="fa-solid fa-book icon"></i>
 
-</nav>
+          <h3>Knjigovodstvo</h3>
 
+          <p>Kompletno vođenje poslovnih knjiga za obrte i tvrtke.</p>
+        </div>
 
+        <div class="card">
+          <i class="fa-solid fa-file-invoice-dollar icon"></i>
 
-<div class="hamburger" onclick="toggleMenu()">
+          <h3>Obračun plaća</h3>
 
-<i class="fa-solid fa-bars"></i>
+          <p>Brz i precizan obračun plaća i doprinosa.</p>
+        </div>
 
-</div>
+        <div class="card">
+          <i class="fa-solid fa-scale-balanced icon"></i>
 
+          <h3>Porezno savjetovanje</h3>
 
-</header>
+          <p>Pomoć pri poreznim pitanjima i optimizaciji troškova.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="process">
+      <h2 class="title">Kako radimo?</h2>
 
+      <div class="services">
+        <div class="card">
+          <h3>1.</h3>
 
+          <p>Upoznajemo vaše poslovanje i potrebe.</p>
+        </div>
 
+        <div class="card">
+          <h3>2.</h3>
 
-<section class="hero">
+          <p>Pronalazimo najbolje računovodstveno rješenje.</p>
+        </div>
 
+        <div class="card">
+          <h3>3.</h3>
 
-<div class="hero-content">
+          <p>Preuzimamo brigu o vašim financijama.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="contact">
+      <h2>Spremni za jednostavnije poslovanje?</h2>
 
-<h1>
+      <p>Kontaktirajte nas i dogovorite besplatne konzultacije.</p>
 
-Vaš financijski partner za sigurno poslovanje
+      <a class="btn" href="kontakt.html"> Kontakt </a>
+    </section>
 
-</h1>
+    <footer>
+      <h3>Ask</h3>
 
+      <p>Računovodstvo kojem možete vjerovati.</p>
 
-<p>
+      <p>© 2026 Kutle Golgeter</p>
+    </footer>
 
-Moderni računovodstveni servis koji štedi vaše vrijeme
-i pomaže vam donositi bolje poslovne odluke.
-
-</p>
-
-
-
-<a class="btn" href="kontakt.html">
-
-Zatražite ponudu
-
-</a>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<section>
-
-
-<h2 class="title">
-
-Zašto baš mi?
-
-</h2>
-
-
-
-<div class="services">
-
-
-<div class="card">
-
-<i class="fa-solid fa-shield-halved icon"></i>
-
-<h3>
-
-Pouzdanost
-
-</h3>
-
-
-<p>
-
-Točni izvještaji, sigurnost podataka i pravovremeno izvršavanje obveza.
-
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-clock icon"></i>
-
-
-<h3>
-
-Ušteda vremena
-
-</h3>
-
-
-<p>
-
-Vi vodite posao, a mi vodimo administraciju i financije.
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-chart-line icon"></i>
-
-
-<h3>
-
-Rast poslovanja
-
-</h3>
-
-
-<p>
-
-Financijski savjeti koji pomažu vašem poslovanju.
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section class="stats">
-
-<div class="stats-container">
-
-
-<div>
-<h2>10+</h2>
-<p>godina iskustva</p>
-</div>
-
-
-<div>
-<h2>250+</h2>
-<p>zadovoljnih klijenata</p>
-</div>
-
-
-<div>
-<h2>99%</h2>
-<p>točnost izvještaja</p>
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-
-<section>
-
-
-<h2 class="title">
-
-Naše usluge
-
-</h2>
-
-
-
-<div class="services">
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-book icon"></i>
-
-
-<h3>
-
-Knjigovodstvo
-
-</h3>
-
-
-<p>
-
-Kompletno vođenje poslovnih knjiga za obrte i tvrtke.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-file-invoice-dollar icon"></i>
-
-
-<h3>
-
-Obračun plaća
-
-</h3>
-
-
-<p>
-
-Brz i precizan obračun plaća i doprinosa.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<i class="fa-solid fa-scale-balanced icon"></i>
-
-
-<h3>
-
-Porezno savjetovanje
-
-</h3>
-
-
-<p>
-
-Pomoć pri poreznim pitanjima i optimizaciji troškova.
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="process">
-
-
-<h2 class="title">
-
-Kako radimo?
-
-</h2>
-
-
-<div class="services">
-
-
-<div class="card">
-
-<h3>1.</h3>
-
-<p>
-
-Upoznajemo vaše poslovanje i potrebe.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>2.</h3>
-
-<p>
-
-Pronalazimo najbolje računovodstveno rješenje.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>3.</h3>
-
-<p>
-
-Preuzimamo brigu o vašim financijama.
-
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section class="contact">
-
-
-<h2>
-
-Spremni za jednostavnije poslovanje?
-
-</h2>
-
-
-<p>
-
-Kontaktirajte nas i dogovorite besplatne konzultacije.
-
-</p>
-
-
-<a class="btn" href="kontakt.html">
-
-Kontakt
-
-</a>
-
-
-</section>
-
-
-
-
-
-
-
-<footer>
-
-
-<h3>
-
-Ask
-</h3>
-
-
-<p>
-
-Računovodstvo kojem možete vjerovati.
-
-</p>
-
-
-<p>
-
-© 2026 Kutle Golgeter
-
-</p>
-
-
-</footer>
-
-
-
-
-
-
-<script>
-
-function toggleMenu(){
-
-document.getElementById("menu")
-.classList.toggle("active");
-
-}
-
-</script>
-
-
-
-</body>
-
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>
-
