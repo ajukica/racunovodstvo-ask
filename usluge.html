@@ -4,19 +4,48 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
 
+    <meta name="author" content="ASK Računovodstveni servis" />
+
+    <meta name="geo.region" content="HR-15" />
+
+    <meta name="geo.placename" content="Šibenik" />
+
+    <meta name="language" content="Croatian" />
     <meta
       name="description"
-      content="ASK računovodstvo - knjigovodstvo, obračun plaća, porezne usluge i poslovno savjetovanje."
+      content="ASK računovodstveni servis Šibenik pruža knjigovodstvo, obračun plaća, porezno savjetovanje i financijsku podršku za obrte i tvrtke."
     />
 
-    <title>ASK | Usluge</title>
+    <link rel="canonical" href="https://racunovodstvo-ask.hr/usluge.html" />
+
+    <title>
+      Računovodstvene usluge Šibenik | ASK knjigovodstvo, plaće i porezi
+    </title>
+
+    <meta property="og:title" content="ASK računovodstvene usluge Šibenik" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta
+      property="og:description"
+      content="Profesionalno knjigovodstvo, obračun plaća i porezno savjetovanje za obrte i tvrtke."
+    />
+
+    <meta
+      property="og:url"
+      content="https://racunovodstvo-ask.hr/usluge.html"
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:locale" content="hr_HR" />
 
     <link rel="stylesheet" href="css/style.css" />
 
     <link rel="stylesheet" href="css/usluge.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
@@ -28,6 +57,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AccountingService",
+
+        "name": "ASK Računovodstveni servis",
+
+        "url": "https://racunovodstvo-ask.hr",
+
+        "areaServed": {
+          "@type": "City",
+          "name": "Šibenik"
+        },
+
+        "serviceType": [
+          "Knjigovodstvo",
+          "Računovodstvo",
+          "Obračun plaća",
+          "Porezno savjetovanje",
+          "Financijsko savjetovanje"
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -38,58 +91,61 @@
         <div>
           <strong>ASK</strong>
 
-          <span>Računovodstveni servis</span>
+          <span>Računovodstveni servis Šibenik</span>
         </div>
       </a>
 
       <nav id="menu">
-        <a href="index.html">Početna</a>
+        <a href="index.html"> Početna </a>
 
-        <a href="o-nama.html">O nama</a>
+        <a href="o-nama.html"> O nama </a>
 
-        <a href="usluge.html">Usluge</a>
+        <a href="usluge.html"> Usluge </a>
 
-        <a href="kontakt.html">Kontakt</a>
+        <a href="kontakt.html"> Kontakt </a>
 
         <a class="nav-btn" href="kontakt.html"> Zatražite ponudu </a>
       </nav>
 
-      <div class="hamburger" onclick="toggleMenu()">
+      <div
+        class="hamburger"
+        onclick="toggleMenu()"
+        aria-label="Otvori izbornik"
+      >
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
-
-    <!-- HERO -->
 
     <section class="services-hero">
       <div>
         <div class="badge">
           <i class="fa-solid fa-briefcase"></i>
 
-          Naše usluge
+          Računovodstvene usluge
         </div>
 
-        <h1>Kompletna financijska podrška za vaše poslovanje</h1>
+        <h1>Računovodstveni servis Šibenik za obrte i tvrtke</h1>
 
         <p>
-          Od svakodnevnog knjigovodstva do strateškog financijskog savjetovanja.
+          ASK pruža kompletne računovodstvene usluge, od svakodnevnog
+          knjigovodstva do financijskog savjetovanja.
         </p>
       </div>
     </section>
 
-    <!-- SERVICES -->
-
     <section>
-      <h2 class="title">Što nudimo?</h2>
+      <h2 class="title">Naše računovodstvene usluge</h2>
 
       <div class="cards">
         <div class="card">
           <i class="fa-solid fa-book"></i>
 
-          <h3>Knjigovodstvo</h3>
+          <h3>Knjigovodstvo Šibenik</h3>
 
           <p>
-            Vođenje poslovnih knjiga za obrte, poduzetnike i trgovačka društva.
+            Vodimo poslovne knjige za obrte, poduzetnike i trgovačka društva.
+            Brinemo o ulaznim i izlaznim računima, dokumentaciji, izvještajima i
+            zakonskim obvezama.
           </p>
         </div>
 
@@ -98,15 +154,21 @@
 
           <h3>Obračun plaća</h3>
 
-          <p>Precizan obračun plaća, doprinosa i zakonske dokumentacije.</p>
+          <p>
+            Precizan obračun plaća, doprinosa, naknada i ostale dokumentacije
+            vezane uz zaposlenike.
+          </p>
         </div>
 
         <div class="card">
           <i class="fa-solid fa-file-invoice-dollar"></i>
 
-          <h3>Porezne usluge</h3>
+          <h3>Porezno savjetovanje</h3>
 
-          <p>Pomoć kod poreznih obveza, prijava i financijskih izvještaja.</p>
+          <p>
+            Pomažemo poduzetnicima razumjeti porezne obveze, rokove i mogućnosti
+            optimizacije poslovanja.
+          </p>
         </div>
 
         <div class="card">
@@ -114,15 +176,16 @@
 
           <h3>Financijsko savjetovanje</h3>
 
-          <p>Analiza poslovanja i podrška kod donošenja važnih odluka.</p>
+          <p>
+            Analiziramo poslovanje i pružamo informacije koje vam pomažu
+            donositi sigurnije poslovne odluke.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- BENEFITS -->
-
     <section class="service-info">
-      <h2 class="title">Zašto ASK?</h2>
+      <h2 class="title">Zašto odabrati ASK računovodstveni servis?</h2>
 
       <div class="info-grid">
         <div>
@@ -130,7 +193,10 @@
 
           <h3>Sigurnost</h3>
 
-          <p>Vaše financije povjeravate stručnom i odgovornom partneru.</p>
+          <p>
+            Vaša poslovna dokumentacija i financijski podaci obrađuju se
+            odgovorno i profesionalno.
+          </p>
         </div>
 
         <div>
@@ -138,23 +204,45 @@
 
           <h3>Ušteda vremena</h3>
 
-          <p>Mi preuzimamo administraciju, a vi se fokusirate na razvoj.</p>
+          <p>
+            Preuzimamo računovodstvene obveze kako biste se vi mogli posvetiti
+            poslovanju.
+          </p>
         </div>
 
         <div>
           <i class="fa-solid fa-headset"></i>
 
-          <h3>Podrška</h3>
+          <h3>Stručna podrška</h3>
 
-          <p>Uvijek imate dostupnog stručnog partnera za pitanja i savjete.</p>
+          <p>
+            Uvijek imate partnera za pitanja vezana uz financije, poreze i
+            poslovanje.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS -->
+    <section>
+      <div style="max-width: 900px; margin: auto; padding: 40px 20px">
+        <h2>Kompletno računovodstvo za poduzetnike u Šibeniku</h2>
+
+        <p>
+          ASK računovodstveni servis pomaže malim i srednjim poduzetnicima,
+          obrtima i trgovačkim društvima u vođenju financija. Naš cilj je
+          omogućiti vam jednostavnije poslovanje, pravovremene informacije i
+          sigurnost u donošenju odluka.
+        </p>
+
+        <p>
+          Bez obzira trebate li samo knjigovodstvo, obračun plaća ili kompletnu
+          računovodstvenu podršku, prilagođavamo uslugu vašim potrebama.
+        </p>
+      </div>
+    </section>
 
     <section class="process">
-      <h2 class="title">Kako suradnja izgleda?</h2>
+      <h2 class="title">Kako izgleda suradnja?</h2>
 
       <div class="steps">
         <div>
@@ -162,15 +250,15 @@
 
           <h3>Upoznajemo vaše poslovanje</h3>
 
-          <p>Analiziramo vaše potrebe, ciljeve i način rada.</p>
+          <p>Analiziramo vaše potrebe i način rada.</p>
         </div>
 
         <div>
           <span>02</span>
 
-          <h3>Kreiramo rješenje</h3>
+          <h3>Pronalazimo najbolje rješenje</h3>
 
-          <p>Odabiremo najbolji model računovodstvene podrške.</p>
+          <p>Dogovaramo model računovodstvene podrške.</p>
         </div>
 
         <div>
@@ -178,17 +266,42 @@
 
           <h3>Vodimo vaše financije</h3>
 
-          <p>Brinemo o rokovima, dokumentima i izvještajima.</p>
+          <p>Brinemo o dokumentima, rokovima i izvještajima.</p>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
+    <section>
+      <h2 class="title">Česta pitanja o računovodstvu</h2>
+
+      <div style="max-width: 900px; margin: auto; padding: 20px">
+        <h3>Koliko košta računovodstveni servis?</h3>
+
+        <p>
+          Cijena ovisi o količini dokumentacije, broju zaposlenih i vrsti
+          poslovanja.
+        </p>
+
+        <h3>Radite li računovodstvo za obrte?</h3>
+
+        <p>
+          Da, pružamo računovodstvene usluge za obrte, male poduzetnike i
+          trgovačka društva.
+        </p>
+
+        <h3>Zašto angažirati računovodstveni servis?</h3>
+
+        <p>
+          Profesionalno računovodstvo smanjuje administraciju, štedi vrijeme i
+          pomaže izbjeći pogreške.
+        </p>
+      </div>
+    </section>
 
     <section class="cta">
-      <h2>Želite jednostavnije poslovanje?</h2>
+      <h2>Želite pouzdanu računovodstvenu podršku?</h2>
 
-      <p>Kontaktirajte ASK i saznajte kako vam možemo pomoći.</p>
+      <p>Kontaktirajte ASK i saznajte kako možemo pomoći vašem poslovanju.</p>
 
       <a class="btn" href="kontakt.html"> Zatražite ponudu </a>
     </section>
@@ -196,7 +309,10 @@
     <footer>
       <h2>ASK</h2>
 
-      <p>Računovodstvo kojem možete vjerovati.</p>
+      <p>
+        ASK računovodstveni servis Šibenik - knjigovodstvo, obračun plaća i
+        porezno savjetovanje.
+      </p>
 
       <div class="social">
         <i class="fa-brands fa-facebook"></i>
@@ -206,7 +322,7 @@
         <i class="fa-brands fa-instagram"></i>
       </div>
 
-      <p class="copy">© 2026 ASK Računovodstveni servis</p>
+      <p class="copy">© 2026 ASK Računovodstveni servis Šibenik</p>
     </footer>
 
     <script>
