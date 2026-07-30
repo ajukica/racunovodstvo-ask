@@ -206,27 +206,16 @@
           </div>
         </div>
 
-        <form class="contact-form" autocomplete="on">
-          <input
-            type="text"
-            name="name"
-            placeholder="Ime i prezime"
-            autocomplete="name"
-          />
+        <form class="contact-form" action="mail.php" method="POST">
+          <input type="text" name="ime" placeholder="Ime i prezime" required />
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            autocomplete="email"
-          />
+          <input type="email" name="email" placeholder="Email" required />
 
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Telefon"
-            autocomplete="tel"
-          />
+          <input type="tel" name="telefon" placeholder="Telefon" />
+
+          <textarea name="poruka" placeholder="Vaša poruka" required></textarea>
+
+          <button type="submit">Pošalji upit</button>
 
           <textarea name="message" placeholder="Vaša poruka"></textarea>
 
