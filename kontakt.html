@@ -89,6 +89,7 @@
   </head>
 
   <body>
+    <div id="alertBox" class="alert-box"></div>
     <header>
       <a href="index.html" class="logo">
         <i class="fa-solid fa-calculator"></i>
@@ -274,6 +275,53 @@
       function toggleMenu() {
         document.getElementById("menu").classList.toggle("active");
       }
+
+      const params = new URLSearchParams(window.location.search);
+
+const status = params.get("status");
+
+const alertBox = document.getElementById("alertBox");
+
+
+if(status === "success") {
+
+    alertBox.innerHTML =
+    "✓ Poruka je uspješno poslana. Javit ćemo vam se uskoro.";
+
+    alertBox.classList.add("alert-success");
+
+}
+
+
+if(status === "error") {
+
+    alertBox.innerHTML =
+    "✕ Došlo je do greške. Pokušajte ponovno.";
+
+    alertBox.classList.add("alert-error");
+
+}
+
+
+if(status) {
+
+    setTimeout(() => {
+
+        alertBox.classList.add("show");
+
+    },100);
+
+
+    setTimeout(() => {
+
+        alertBox.classList.remove("show");
+
+    },5000);
+
+
+    window.history.replaceState({}, document.title, "kontakt.html");
+
+}
     </script>
   </body>
 </html>

@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-    $primatelj = "info@ask-racunovodstvo.hr";
+    $primatelj = "info@racunovodstvo-ask.hr";
 
 
     $naslov = "Novi upit sa ASK web stranice";
@@ -43,40 +43,17 @@ $poruka
     $zaglavlje .= "Reply-To: $email\r\n";
 
     $zaglavlje .= "Content-Type: text/plain; charset=UTF-8\r\n";
+if (mail($primatelj, $naslov, $sadrzaj, $zaglavlje)) {
 
-    if (mail($primatelj, $naslov, $sadrzaj, $zaglavlje)) {
+    header("Location: kontakt.html?status=success");
+    exit();
 
+} else {
 
-        echo "
+    header("Location: kontakt.html?status=error");
+    exit();
 
-<h2>
-<h1>Hvala na upitu</h1>
-
-<p>
-Vaša poruka je uspješno poslana.
-ASK računovodstveni servis javit će vam se u najkraćem roku.
-</p>
-</h2>
-
-<p>
-Javit ćemo vam se uskoro.
-</p>
-
-";
-
-
-    } else {
-
-
-        echo "
-
-<h2>
-Greška kod slanja poruke.
-</h2>
-
-";
-
-    }
+}
 
 
 }
